@@ -66,20 +66,6 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
         this.dockItems = [
             {
-                label: 'Finder',
-                tooltipOptions: {
-                    tooltipLabel: 'Finder',
-                    tooltipPosition: 'top',
-                    positionTop: -15,
-                    positionLeft: 15,
-                    showDelay: 1000
-                },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/finder.svg',
-                command: () => {
-                    this.displayFinder = true;
-                }
-            },
-            {
                 label: 'Terminal',
                 tooltipOptions: {
                     tooltipLabel: 'Terminal',

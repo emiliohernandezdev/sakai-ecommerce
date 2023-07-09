@@ -15,9 +15,22 @@ export class AppMenuComponent implements OnInit {
     ngOnInit() {
         this.model = [
             {
-                label: 'Home',
+                label: 'Mantenimientos',
                 items: [
-                    { label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/'] }
+                    { label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/'] },
+                    { label: 'Productos', icon: 'pi pi-fw pi-shopping-bag', routerLink: ['/products'] },
+                    { label: 'Órdenes', icon: 'pi pi-fw pi-shopping-cart', routerLink: ['/products'] },
+                    { label: 'Categorías', icon: 'pi pi-fw pi-tags', routerLink: ['/products'] },
+                    { label: 'Clientes', icon: 'pi pi-fw pi-users', routerLink: ['/products'] },
+                ]
+            },
+            {
+                label: 'Sistema',
+                items: [
+                    { label: 'Usuarios', icon: 'pi pi-fw pi-users', routerLink: ['/users'] },
+                    { label: 'Conexiones', icon: 'pi pi-fw pi-database', routerLink: ['/conections'] },
+                    { label: 'SMTP', icon: 'pi pi-fw pi-inbox', routerLink: ['/conections'] },
+                    { label: 'Configs. globales', icon: 'pi pi-fw pi-cog', routerLink: ['/products'] }
                 ]
             },
             {
@@ -146,17 +159,6 @@ export class AppMenuComponent implements OnInit {
                                 ]
                             },
                         ]
-                    }
-                ]
-            },
-            {
-                label: 'Get Started',
-                items: [
-                    {
-                        label: 'Documentation', icon: 'pi pi-fw pi-question', routerLink: ['/documentation']
-                    },
-                    {
-                        label: 'View Source', icon: 'pi pi-fw pi-search', url: ['https://github.com/primefaces/sakai-ng'], target: '_blank'
                     }
                 ]
             }
